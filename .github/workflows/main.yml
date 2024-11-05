@@ -19,26 +19,25 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'  # Use your desired Python version
+        python-version: '3.12.4'  # Use Python 3.12.4
+
+    - name: Install make
+      run: |
+        echo "Installing make..."
+        sudo apt-get update
+        sudo apt-get install -y make
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run pylint
+    - name: Run lints
       run: |
-        echo "Running pylint..."
-        pylint src/ tests/ || true  # Allow the pipeline to continue even if pylint fails
+        echo "Running lints..."
+        make lints.ci  # Run the linting commands defined in the Makefile
 
-
-    - name: Run flake8
+    - name: Run unit tests
       run: |
-        echo "Running flake8..."
-        flake8 src/ tests/
-
-    # Optional: Run tests with pytest
-    - name: Run tests
-      run: |
-        echo "Running tests..."
-        pytest --maxfail=1 --disable-warnings
+        echo "Running unit tests..."
+        make test.unit  # Run the unit tests defined in the Makefile
