@@ -26,3 +26,9 @@ Repository = "http://github.com/dbarnett/python-helloworld"
 # command-line executables to expose
 [project.scripts]
 helloworld_in_python = "helloworld.main:main"
+
+[tool.poetry]
+name = "python-customer-usecase-repo"
+version = "0.1.0"
+description = "Your project description"
+authors = ["Your Pari <parinithareddy29.email@example.com>"]
