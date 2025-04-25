@@ -1,5 +1,4 @@
 # Makefile
-ci: setup lints.ci test.unit
 
 setup:
 	pip install -r requirements.txt
@@ -18,3 +17,6 @@ lints.ci:
 test.unit:
 	@echo "Running unit tests..."
 	pytest --maxfail=1 --disable-warnings
+
+build:
+	python setup.py sdist bdist_wheel
