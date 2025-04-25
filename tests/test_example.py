@@ -1,5 +1,6 @@
 """Unit tests for the example module."""
 
+
 def test_addition():
     """Test addition of two numbers."""
     assert 1 + 1 == 2
@@ -23,3 +24,4 @@ def test_division():
 def test_string_concatenation():
     """Test concatenation of two strings."""
     assert "Hello" + " " + "World" == "Hello World"
+
