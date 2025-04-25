@@ -1,4 +1,9 @@
 # Makefile
+ci: setup lints.ci test.unit
+
+setup:
+	pip install -r requirements.txt
+
 all: lints.ci test.unit
 .PHONY: lints.ci test.unit
 
