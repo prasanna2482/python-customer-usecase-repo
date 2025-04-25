@@ -19,4 +19,4 @@ test.unit:
 	pytest --maxfail=1 --disable-warnings
 
 build:
-	python setup.py sdist bdist_wheel
+	python3 setup.py sdist bdist_wheel
