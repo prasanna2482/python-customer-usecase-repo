@@ -24,4 +24,3 @@ def test_division():
 def test_string_concatenation():
     """Test concatenation of two strings."""
     assert "Hello" + " " + "World" == "Hello World"
-
