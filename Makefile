@@ -1,5 +1,5 @@
 # Makefile
-
+all: lints.ci test.unit
 .PHONY: lints.ci test.unit
 
 # Target to run lints
