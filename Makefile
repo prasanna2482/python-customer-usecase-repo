@@ -1,9 +1,9 @@
 # Makefile
 
+all: setup lints.ci test.unit build
 setup:
 	pip install -r requirements.txt
 
-all: lints.ci test.unit
 .PHONY: lints.ci test.unit
 
 # Target to run lints
