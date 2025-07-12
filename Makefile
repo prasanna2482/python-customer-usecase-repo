@@ -10,4 +10,6 @@ lints.ci:
 # Target to run unit tests
 test.unit:
 	@echo "Running unit tests..."
+tup.py sdist bdist_wheel
+
 	poetry run pytest --maxfail=1 --disable-warnings

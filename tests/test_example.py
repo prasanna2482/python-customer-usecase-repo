@@ -1,3 +1,5 @@
+"""Unit tests for the example module."""
+
 
 def test_addition():
     """Test addition of two numbers."""
