@@ -1,5 +1,3 @@
-name: Python Linting and Tests
-
 on:
   push:
     branches:
