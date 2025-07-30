@@ -10,4 +10,4 @@ lints.ci:
 # Target to run unit tests
 test.unit:
 	@echo "Running unit tests..."
-	poetry run pytest --maxfail=1 --disable-warnings
+	pytest --maxfail=1 --disable-warnings
