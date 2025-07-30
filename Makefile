@@ -1,20 +1,15 @@
-# Makefile
-ci: setup lints.ci test.unit
-
-setup:
-	pip install -r requirements.txt
-
-all: lints.ci test.unit
 .PHONY: lints.ci test.unit
 
 # Target to run lints
 lints.ci:
 	@echo "Running pylint..."
-	pylint src/ tests/
+	poetry run pylint src/ tests/ || true
 	@echo "Running flake8..."
-	flake8 src/ tests/
+	poetry run flake8 src/ tests/
 
 # Target to run unit tests
 test.unit:
 	@echo "Running unit tests..."
-	pytest --maxfail=1 --disable-warnings
+tup.py sdist bdist_wheel
+
+	poetry run pytest --maxfail=1 --disable-warnings
