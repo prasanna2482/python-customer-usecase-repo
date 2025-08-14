@@ -1,5 +1,4 @@
 
-============
 A simple program, and an example of how to structure a python project. Demonstrates a basic package
 file structure (using [flat layout]) and a way to define a [single package version] shared between
 package metadata and program runtime.
