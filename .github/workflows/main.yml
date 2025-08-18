@@ -1,5 +1,4 @@
 name: Python Linting and Tests
-
 on:
   push:
     branches:
@@ -7,6 +6,7 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   lint-and-test:
