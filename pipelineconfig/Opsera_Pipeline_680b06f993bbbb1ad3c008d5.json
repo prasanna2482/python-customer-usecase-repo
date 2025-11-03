@@ -1,0 +1,346 @@
+{
+  "_id": "680b06f993bbbb1ad3c008d5",
+  "name": "HW_Demo_DND",
+  "description": "Create a new template from scratch.",
+  "owner": "5f75953446564c10379902bb",
+  "roles": [
+    {
+      "role": "administrator",
+      "user": "qaprod@protonmail.com",
+      "group": null
+    }
+  ],
+  "tags": [],
+  "type": [],
+  "organizationName": "protonmail.com",
+  "account": "org109-acc",
+  "project": {
+    "name": "",
+    "project_id": ""
+  },
+  "workflow": {
+    "source": {
+      "name": "",
+      "service": "github",
+      "accountId": "6705127d20f7260012756922",
+      "workspace": "",
+      "workspaceName": "",
+      "repository": "python-customer-usecase-repo",
+      "repoId": "prasanna2482/python-customer-usecase-repo",
+      "projectId": "prasanna2482/python-customer-usecase-repo",
+      "gitUrl": "https://github.com/prasanna2482/python-customer-usecase-repo",
+      "sshUrl": "git@github.com:prasanna2482/python-customer-usecase-repo.git",
+      "branch": "main",
+      "secondary_branches": [],
+      "key": "",
+      "trigger_active": false,
+      "isPushEvent": false,
+      "isPrEvent": false,
+      "isMonitored": false,
+      "sendStepUpdates": false,
+      "prCreatedEvent": true,
+      "prApprovedEvent": false,
+      "gitExportEnabled": true,
+      "gitExportPath": "pipelineconfig",
+      "dynamicSettings": false,
+      "allowDynamicSettingsInUi": false,
+      "allowPipelineParametersInUi": false,
+      "allowDynamicSettingsInSalesforceUi": false,
+      "enableBranchSwitch": false,
+      "opseraEdgeToolId": "",
+      "useOpseraEdgeProxy": false,
+      "baselineFromSuccessfulRun": false,
+      "branch_pattern": ""
+    },
+    "plan": [
+      {
+        "name": "Sonar Scan",
+        "description": "",
+        "tool": {
+          "tool_identifier": "sonar_v2",
+          "configuration": {
+            "type": "github",
+            "gitToolId": "66ed208776666518e26155f8",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "gitRepository": "python-customer-usecase-repo",
+            "gitRepositoryID": "parinithaopsera456/python-customer-usecase-repo",
+            "defaultBranch": "child1",
+            "sonarToolConfigId": "67afaee189d78c0012790544",
+            "saveSonarParameters": false,
+            "sonarProjectParameters": [],
+            "sonarGlobalParameters": [],
+            "clientSideThreshold": false,
+            "thresholdCompliance": [],
+            "thresholdRating": [],
+            "sonarSourcePath": "",
+            "projectKey": "timetotest",
+            "newProjectKey": false,
+            "enableDependency": false,
+            "dependencyType": "",
+            "commands": "",
+            "saveInputParameters": false,
+            "inputParameters": [],
+            "scannerType": "sonar-scanner",
+            "settingXmlScriptId": "",
+            "settingXmlFlag": false,
+            "sshUrl": "git@github.com:parinithaopsera456/python-customer-usecase-repo.git",
+            "gitUrl": "https://github.com/parinithaopsera456/python-customer-usecase-repo",
+            "sonarUrl": "https://sonarqube-qanshyzdeop4eb.prodqa-private.opsera.io",
+            "sonarPort": "",
+            "sonarUserId": "admin",
+            "gitCommitId": "c999319ba5c79b3581578a376c4672b625a2338f"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "code-scan"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [
+          {
+            "type": "pipeline",
+            "value": "sonar-scan_680b333a09610b155e823dff"
+          }
+        ],
+        "active": false,
+        "updatedAt": "2025-04-25T07:01:14.594Z",
+        "_id": "680b333a09610b155e823dff",
+        "dependencies": []
+      },
+      {
+        "name": "Sonar-jenk",
+        "description": "",
+        "tool": {
+          "tool_identifier": "sonar",
+          "configuration": {
+            "jobType": "CODE SCAN",
+            "toolConfigId": "642fa4756736ad0088b81da8",
+            "jenkinsUrl": "https://jenkins-nekisj04.prodqa-private.opsera.io/",
+            "jenkinsPort": "",
+            "jUserId": "admin",
+            "jAuthToken": "",
+            "jobName": "CODE SCAN_680b06f993bbbb1ad3c008d5_6810f8c4c76583aa18d82259",
+            "toolJobId": "64900c836740fc0062345f8e",
+            "toolJobType": [
+              "CODE SCAN"
+            ],
+            "projectKey": "timetotestfast1",
+            "projectName": "timetotestfast1",
+            "accountUsername": "",
+            "projectId": "Opsera-QA/spring-boot-hello-world-example-1",
+            "defaultBranch": "main",
+            "dockerName": "",
+            "dockerTagName": "",
+            "buildType": "gradle",
+            "gitToolId": "6811c29f1b9cf300127a42e1",
+            "repoId": "Opsera-QA/spring-boot-hello-world-example-1",
+            "gitUrl": "https://github.com/Opsera-QA/spring-boot-hello-world-example-1",
+            "sshUrl": "git@github.com:Opsera-QA/spring-boot-hello-world-example-1.git",
+            "service": "github",
+            "gitCredential": "Git-Prasanna-QA",
+            "gitUserName": "qaprod@protonmail.com",
+            "repository": "spring-boot-hello-world-example-1",
+            "branch": "main",
+            "sonarSourcePath": "",
+            "workspace": "",
+            "workspaceName": "",
+            "sonarToolConfigId": "67afaee189d78c0012790544",
+            "workspaceDeleteFlag": true,
+            "jobDescription": "",
+            "job_type": "opsera-job",
+            "gitBranch": "main",
+            "successThreshold": "",
+            "isScanArtifact": false,
+            "stepIdXml": "",
+            "commands": "",
+            "clientSideThreshold": false,
+            "thresholdCompliance": [],
+            "thresholdRating": [],
+            "saveSonarParameters": false,
+            "sonarCustomParameters": [],
+            "useBuildStepResource": false,
+            "buildStepId": "",
+            "agentLabels": "generic-linux",
+            "buildToolVersion": "6.3",
+            "sonarUrl": "https://sonarqube-qanshyzdeop4eb.prodqa-private.opsera.io",
+            "sonarPort": "",
+            "sonarUserId": "admin",
+            "gitCommitId": "1038c75377e75585e3c0f264f9a55ef492342ac4"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null,
+          "job_type": "opsera-job"
+        },
+        "trigger": [],
+        "type": [
+          "code-scan"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [
+          {
+            "type": "pipeline",
+            "value": "sonar-jenk_6810f8c4c76583aa18d82259"
+          }
+        ],
+        "last_status": {
+          "data": {
+            "jenkinsConsoleLog": "",
+            "runCount": 35,
+            "action": "START",
+            "dockerName": "",
+            "dockerTagName": "",
+            "gitCommitId": "1038c75377e75585e3c0f264f9a55ef492342ac4",
+            "hasDowloadableReport": false,
+            "gitUrl": "https://github.com/Opsera-QA/spring-boot-hello-world-example-1",
+            "gitCommitMessage": "Pipeline REG_Argo Rollback_DO NOT DELETE Docker image details Commit for Run 206",
+            "gitCommitAuthor": "opseraPipeline",
+            "gitBranch": "main",
+            "repository": "spring-boot-hello-world-example-1",
+            "status": "SUCCESS",
+            "message": "Job is Successful",
+            "buildNumber": 11,
+            "jobName": "CODE SCAN_680b06f993bbbb1ad3c008d5_6810f8c4c76583aa18d82259"
+          },
+          "updatedAt": "2025-04-30T06:56:08.201Z"
+        },
+        "active": true,
+        "updatedAt": "2025-04-29T16:05:24.808Z",
+        "_id": "6810f8c4c76583aa18d82259",
+        "dependencies": []
+      },
+      {
+        "name": "Test & Build CMD",
+        "description": "",
+        "tool": {
+          "tool_identifier": "command-line",
+          "configuration": {
+            "type": "github",
+            "jobType": "SHELL SCRIPT",
+            "toolConfigId": "642fa4756736ad0088b81da8",
+            "toolName": "qa_Jenkins test_DO NOT DELETE",
+            "jobName": "SHELL_SCRIPT_V2_680b06f993bbbb1ad3c008d5_680b1151b1875382e2a9842f",
+            "toolJobId": "648ff5637055e50060c8b48a",
+            "projectId": "",
+            "buildType": "others",
+            "gitToolId": "66ed208776666518e26155f8",
+            "repoId": "parinithaopsera456/python-customer-usecase-repo",
+            "gitUrl": "https://github.com/parinithaopsera456/python-customer-usecase-repo",
+            "sshUrl": "git@github.com:parinithaopsera456/python-customer-usecase-repo.git",
+            "service": "github",
+            "gitCredential": "GH-Pari",
+            "workspace": "",
+            "workspaceName": "",
+            "repository": "python-customer-usecase-repo",
+            "gitBranch": "child1",
+            "agentLabels": "generic-linux",
+            "autoScaleEnable": true,
+            "outputPath": "",
+            "outputFileName": "",
+            "dependencyType": "",
+            "workspaceDeleteFlag": true,
+            "sourceScript": false,
+            "inputPath": "",
+            "inputFileName": "",
+            "commands": "apt install sudo\nsudo apt update\nsudo apt install build-essential\nsudo apt install python3 python3-pip -y\nmake --version\nmake all\nls -a dist",
+            "terraformStepId": "",
+            "customParameters": [],
+            "outputCustomParameters": [],
+            "stepParameters": [],
+            "useTerraformOutput": false,
+            "sonarScanFlag": false,
+            "saveSonarParameters": false,
+            "sonarCustomParameters": [],
+            "sonarToolConfigId": "",
+            "projectKey": "",
+            "saveEnvironmentVariables": false,
+            "environmentVariables": [],
+            "clientSideThreshold": false,
+            "thresholdCompliance": [],
+            "thresholdRating": [],
+            "reportDetailsFlag": false,
+            "reportPath": "",
+            "reportFileName": "",
+            "scriptType": "package",
+            "scriptId": "",
+            "toolJobName": "Shell Script",
+            "gitCommitId": "c999319ba5c79b3581578a376c4672b625a2338f"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null,
+          "job_type": "shell script"
+        },
+        "trigger": [],
+        "type": [
+          "script"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [
+          {
+            "type": "pipeline",
+            "value": "test--build-cmd_680b1151b1875382e2a9842f"
+          }
+        ],
+        "last_status": {
+          "data": {
+            "jenkinsConsoleLog": "",
+            "runCount": 19,
+            "action": "START",
+            "gitCommitId": "c999319ba5c79b3581578a376c4672b625a2338f",
+            "hasDowloadableReport": false,
+            "gitUrl": "https://github.com/parinithaopsera456/python-customer-usecase-repo",
+            "gitBranch": "child1",
+            "repository": "python-customer-usecase-repo",
+            "status": "SUCCESS",
+            "message": "Job is Successful",
+            "buildNumber": 9,
+            "jobName": "SHELL_SCRIPT_V2_680b06f993bbbb1ad3c008d5_680b1151b1875382e2a9842f"
+          },
+          "updatedAt": "2025-04-25T11:05:40.707Z"
+        },
+        "active": false,
+        "updatedAt": "2025-04-25T04:36:33.162Z",
+        "_id": "680b1151b1875382e2a9842f",
+        "dependencies": [
+          "680b333a09610b155e823dff"
+        ]
+      }
+    ],
+    "schedule": {
+      "start_date": null,
+      "end_date": null,
+      "frequency": ""
+    },
+    "last_step": {
+      "status": "stopped",
+      "check_count": 1,
+      "step_id": ""
+    },
+    "run_count": 35,
+    "last_run": {
+      "completed": "2025-04-30T06:56:22.705Z",
+      "run_count": 35,
+      "status": "success"
+    }
+  },
+  "active": true,
+  "template": "5ec7c8cedc73d9532e860b67",
+  "templateIdentifier": "blank_pipeline_template",
+  "createdAt": "2025-04-25T03:52:25.891Z",
+  "updatedAt": "2025-11-03T12:43:39.156Z",
+  "__v": 0
+}
