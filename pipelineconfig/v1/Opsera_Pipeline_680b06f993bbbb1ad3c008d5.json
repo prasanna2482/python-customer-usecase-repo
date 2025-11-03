@@ -318,6 +318,26 @@
         "dependencies": [
           "680b333a09610b155e823dff"
         ]
+      },
+      {
+        "name": "PR",
+        "description": "",
+        "tool": {
+          "tool_identifier": "git-operation"
+        },
+        "trigger": [],
+        "type": [
+          "git_automation"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [],
+        "active": true,
+        "dependencies": [
+          "680b1151b1875382e2a9842f"
+        ],
+        "_id": "6908af85ad36b57b478e89eb",
+        "updatedAt": "2025-11-03T13:35:01.679Z"
       }
     ],
     "schedule": {
@@ -326,21 +346,19 @@
       "frequency": ""
     },
     "last_step": {
-      "status": "stopped",
-      "check_count": 1,
+      "status": "reset",
+      "check_count": 0,
       "step_id": ""
     },
     "run_count": 35,
     "last_run": {
-      "completed": "2025-04-30T06:56:22.705Z",
-      "run_count": 35,
-      "status": "success"
+      "status": "reset"
     }
   },
   "active": true,
   "template": "5ec7c8cedc73d9532e860b67",
   "templateIdentifier": "blank_pipeline_template",
   "createdAt": "2025-04-25T03:52:25.891Z",
-  "updatedAt": "2025-11-03T12:45:09.858Z",
+  "updatedAt": "2025-11-03T14:15:34.213Z",
   "__v": 0
 }
