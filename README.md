@@ -1,4 +1,4 @@
-Hello, World 3
+Hello, World 1
 ============
 
 WARNING: This is the legacy py2 version. See the latest version in this repo's `main` branch.
